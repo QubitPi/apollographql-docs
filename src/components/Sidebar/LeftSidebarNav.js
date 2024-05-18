@@ -62,17 +62,17 @@ export function LeftSidebarNav(props) {
         }
       >
         <SidebarCategory title="Welcome">
-          <SidebarCategoryLink docset="/" icon={<HomeIcon />} />
-          <SidebarCategoryLink docset="odyssey" icon={<OdysseyIcon />} />
+          {/*<SidebarCategoryLink docset="/" icon={<HomeIcon />} />*/}
+          {/*<SidebarCategoryLink docset="odyssey" icon={<OdysseyIcon />} />*/}
         </SidebarCategory>
         <SidebarCategory title="SDKs">
-          <SidebarCategoryLink
-            docset="apollo-server"
-            icon={<ApolloServerIcon />}
-          />
+          {/*<SidebarCategoryLink*/}
+          {/*  docset="apollo-server"*/}
+          {/*  icon={<ApolloServerIcon />}*/}
+          {/*/>*/}
           <SidebarCategoryLink docset="react" icon={<ApolloClientIcon />} />
-          <SidebarCategoryLink docset="kotlin" icon={<ApolloKotlinIcon />} />
-          <SidebarCategoryLink docset="ios" icon={<ApolloIOSIcon />} />
+          {/*<SidebarCategoryLink docset="kotlin" icon={<ApolloKotlinIcon />} />*/}
+          {/*<SidebarCategoryLink docset="ios" icon={<ApolloIOSIcon />} />*/}
         </SidebarCategory>
         <SidebarCategory
           title={
@@ -94,32 +94,32 @@ export function LeftSidebarNav(props) {
             </>
           }
         >
-          <SidebarCategoryLink docset="graphos" icon={<GraphOSIcon />} />
-          <SidebarCategoryLink
-            docset="graphos/delivery"
-            icon={<DeliveryIcon />}
-          />
-          <SidebarCategoryLink
-            docset="graphos/explorer"
-            icon={<ExplorerIcon />}
-          />
-          <SidebarCategoryLink
-            docset="graphos/metrics"
-            icon={<MetricsIcon />}
-          />
-          <SidebarCategoryLink docset="graphos/org" icon={<OrgIcon />} />
-          <SidebarCategoryLink docset="federation" icon={<FederationIcon />} />
-          <SidebarCategoryLink docset="rover" icon={<RoverIcon />} />
-          <SidebarCategoryLink
-            docset="graphos/cloud-routing"
-            icon={<CloudIcon />}
-          />
-          <SidebarCategoryLink docset="router" icon={<RouterIcon />} />
-          <SidebarCategoryLink
-            docset="graphos/enterprise"
-            icon={<EnterpriseIcon />}
-          />
-          <SidebarCategoryLink docset="technotes" icon={<TechnotesIcon />} />
+          {/*<SidebarCategoryLink docset="graphos" icon={<GraphOSIcon />} />*/}
+          {/*<SidebarCategoryLink*/}
+          {/*  docset="graphos/delivery"*/}
+          {/*  icon={<DeliveryIcon />}*/}
+          {/*/>*/}
+          {/*<SidebarCategoryLink*/}
+          {/*  docset="graphos/explorer"*/}
+          {/*  icon={<ExplorerIcon />}*/}
+          {/*/>*/}
+          {/*<SidebarCategoryLink*/}
+          {/*  docset="graphos/metrics"*/}
+          {/*  icon={<MetricsIcon />}*/}
+          {/*/>*/}
+          {/*<SidebarCategoryLink docset="graphos/org" icon={<OrgIcon />} />*/}
+          {/*<SidebarCategoryLink docset="federation" icon={<FederationIcon />} />*/}
+          {/*<SidebarCategoryLink docset="rover" icon={<RoverIcon />} />*/}
+          {/*<SidebarCategoryLink*/}
+          {/*  docset="graphos/cloud-routing"*/}
+          {/*  icon={<CloudIcon />}*/}
+          {/*/>*/}
+          {/*<SidebarCategoryLink docset="router" icon={<RouterIcon />} />*/}
+          {/*<SidebarCategoryLink*/}
+          {/*  docset="graphos/enterprise"*/}
+          {/*  icon={<EnterpriseIcon />}*/}
+          {/*/>*/}
+          {/*<SidebarCategoryLink docset="technotes" icon={<TechnotesIcon />} />*/}
         </SidebarCategory>
       </Stack>
     </Box>

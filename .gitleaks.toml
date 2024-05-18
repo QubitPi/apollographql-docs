@@ -18,8 +18,8 @@
     id = "generic-api-key"
     [ rules.allowlist ]
         commits = [
-            # Allowlist https://github.com/apollographql/docs/blob/5b47e0b5dc953d0b51b31594117cd76522b67a96/src/content/basics/tutorial/mutation-resolvers.md?plain=1#L141 
-            # and https://github.com/apollographql/docs/blob/5b47e0b5dc953d0b51b31594117cd76522b67a96/src/content/basics/tutorial/mutation-resolvers.md?plain=1#L170
+            # Allowlist https://github.com/QubitPi/apollographql-docs/blob/5b47e0b5dc953d0b51b31594117cd76522b67a96/src/content/basics/tutorial/mutation-resolvers.md?plain=1#L141
+            # and https://github.com/QubitPi/apollographql-docs/blob/5b47e0b5dc953d0b51b31594117cd76522b67a96/src/content/basics/tutorial/mutation-resolvers.md?plain=1#L170
 	        # These are example authentication tokens
             "5b47e0b5dc953d0b51b31594117cd76522b67a96",
             

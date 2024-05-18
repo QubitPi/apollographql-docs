@@ -295,7 +295,7 @@ export default function Page({file}) {
 
   const editOnGitHub = useMemo(() => {
     const repo = `https://github.com/${
-      gitRemote?.full_name ?? 'apollographql/docs'
+      gitRemote?.full_name ?? 'QubitPi/apollographql-docs'
     }`;
 
     const repoPath = ['tree', gitRemote?.ref || 'main'];

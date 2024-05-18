@@ -53,9 +53,9 @@ export const SidebarCategoryLink = ({icon, docset, ...props}) => {
   const config = configs[docset];
 
   const isActiveMenu = activeDocset === docset;
-  const isActivePath =
-    pathContext.basePath === docset ||
-    config.versions?.some(version => pathContext.basePath === version.slug);
+  const isActivePath = pathContext.basePath === docset
+    // pathContext.basePath === docset ||
+    // config.versions?.some(version => pathContext.basePath === version.slug);
 
   const docsetLink =
     config.link ?? (docset.startsWith('/') ? docset : `/${docset}`);
