@@ -392,7 +392,7 @@ export default function TypeScriptApiBox({name}) {
       signature: _signature(rawData, parameters),
       summary: _summary(rawData),
       groups,
-      repo: 'apollographql/apollo-client',
+      repo: 'QubitPi/apollo-client',
       branch: 'main',
       filepath: rawData.sources[0].fileName,
       lineno: rawData.sources[0].line

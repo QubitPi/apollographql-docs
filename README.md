@@ -131,7 +131,7 @@ The docs content is written and maintained in the following places. Many of them
 
 ### Remote
 
-- [Apollo Client (React)](https://github.com/apollographql/apollo-client)
+- [Apollo Client (React)](https://github.com/QubitPi/apollo-client)
 - [Apollo Server](https://github.com/apollographql/apollo-server)
 - [Apollo iOS](https://github.com/apollographql/apollo-ios-dev)
 - [Apollo Kotlin](https://github.com/apollographql/apollo-kotlin)
@@ -203,7 +203,7 @@ To add a remote docset to the website, add a record in the `sources/remote.js` f
 module.exports = {
   // ...other sources
   react: {
-    remote: "https://github.com/apollographql/apollo-client",
+    remote: "https://github.com/QubitPi/apollo-client",
     branch: "main",
   },
 };
@@ -218,11 +218,11 @@ This website presents multiple versions of docs for the same subject as options 
 module.exports = {
   // ...other sources
   react: {
-    remote: "https://github.com/apollographql/apollo-client",
+    remote: "https://github.com/QubitPi/apollo-client",
     branch: "main",
   },
   "react/v2": {
-    remote: "https://github.com/apollographql/apollo-client",
+    remote: "https://github.com/QubitPi/apollo-client",
     branch: "version-2.6",
   },
 };
@@ -327,7 +327,7 @@ on:
 
 jobs:
   publish:
-    uses: apollographql/docs/.github/workflows/publish.yml@main
+    uses: QubitPi/apollographql-docs/.github/workflows/publish.yml@main
     secrets:
       NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
       NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
@@ -354,7 +354,7 @@ We also use Netlify to build and publish deploy previews for PRs that include do
   command = """\
   cd ../
   rm -rf monodocs
-  git clone https://github.com/apollographql/docs --branch main --single-branch monodocs
+  git clone https://github.com/QubitPi/apollographql-docs --branch main --single-branch monodocs
   cd monodocs
   npm i
   cp -r ../docs local

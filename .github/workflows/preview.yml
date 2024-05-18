@@ -19,7 +19,7 @@ jobs:
       - name: Checkout docs repo
         uses: actions/checkout@v2
         with:
-          repository: apollographql/docs
+          repository: QubitPi/apollographql-docs
 
       - name: Checkout content repo
         uses: actions/checkout@v2

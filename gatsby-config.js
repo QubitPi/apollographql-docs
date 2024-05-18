@@ -1,10 +1,10 @@
-const {algoliaSettings} = require('apollo-algolia-transform');
+// const {algoliaSettings} = require('apollo-algolia-transform');
 const {
   remarkTypescript,
   highlightPreservation,
   isWrapped
 } = require('remark-typescript');
-const {query, transformer} = require('./algolia');
+// const {query, transformer} = require('./algolia');
 const yaml = require('js-yaml');
 const fs = require('fs');
 const remoteSources = require('./sources/remote');
@@ -108,52 +108,52 @@ const plugins = [
         : 'https://apollo-client-docs.netlify.app/client.api.json'
     }
   },
-  {
-    resolve: 'gatsby-plugin-google-gtag',
-    options: {
-      // todo: remove ua property in the nearish future
-      trackingIds: ['UA-74643563-13', 'G-0BGG5V2W2K', 'G-3WEVC01XLB']
-    }
-  },
-  {
-    resolve: 'gatsby-plugin-google-tagmanager',
-    options: {
-      id: process.env.GTM_CONTAINER_ID,
-      includeInDevelopment: false
-    }
-  },
+  // {
+  //   resolve: 'gatsby-plugin-google-gtag',
+  //   options: {
+  //     // todo: remove ua property in the nearish future
+  //     trackingIds: ['UA-74643563-13', 'G-0BGG5V2W2K', 'G-3WEVC01XLB']
+  //   }
+  // },
+  // {
+  //   resolve: 'gatsby-plugin-google-tagmanager',
+  //   options: {
+  //     id: process.env.GTM_CONTAINER_ID,
+  //     includeInDevelopment: false
+  //   }
+  // },
   {
     resolve: 'gatsby-plugin-env-variables',
     options: {
       allowList: [
-        'ALGOLIA_APP_ID',
-        'ALGOLIA_SEARCH_KEY',
+        // 'ALGOLIA_APP_ID',
+        // 'ALGOLIA_SEARCH_KEY',
         'CONTEXT',
         'DEPLOY_URL'
       ]
     }
   },
-  {
-    resolve: 'gatsby-plugin-algolia',
-    options: {
-      appId: process.env.ALGOLIA_APP_ID,
-      apiKey: isProduction
-        ? process.env.ALGOLIA_WRITE_KEY
-        : process.env.GATSBY_STAGING_DOCS_ALGOLIA_KEY,
-      // skipIndexing: process.env.CONTEXT !== 'production',
-      indexName: isProduction ? 'docs' : 'staging_docs',
-      queries: [
-        {
-          query,
-          transformer,
-          settings: {
-            ...algoliaSettings,
-            attributesForFaceting: ['categories', 'docset', 'type']
-          }
-        }
-      ]
-    }
-  },
+  // {
+  //   resolve: 'gatsby-plugin-algolia',
+  //   options: {
+  //     appId: process.env.ALGOLIA_APP_ID,
+  //     apiKey: isProduction
+  //       ? process.env.ALGOLIA_WRITE_KEY
+  //       : process.env.GATSBY_STAGING_DOCS_ALGOLIA_KEY,
+  //     // skipIndexing: process.env.CONTEXT !== 'production',
+  //     indexName: isProduction ? 'docs' : 'staging_docs',
+  //     queries: [
+  //       {
+  //         query,
+  //         transformer,
+  //         settings: {
+  //           ...algoliaSettings,
+  //           attributesForFaceting: ['categories', 'docset', 'type']
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
   {
     resolve: '@colliercz/gatsby-transformer-gitinfo',
     // Will match all .md* files, except README.md
@@ -162,15 +162,15 @@ const plugins = [
       ignore: /README/i
     }
   },
-  {
-    resolve: 'gatsby-plugin-apollo-onetrust',
-    options: {
-      autoBlockSrc: process.env.OT_AUTOBLOCK_SRC,
-      otSDKStubSrc: process.env.OT_SDKSTUB_SRC,
-      dataDomainScript: process.env.OT_DATA_DOMAIN_SCRIPT,
-      skip: !isProduction
-    }
-  }
+  // {
+  //   resolve: 'gatsby-plugin-apollo-onetrust',
+  //   options: {
+  //     autoBlockSrc: process.env.OT_AUTOBLOCK_SRC,
+  //     otSDKStubSrc: process.env.OT_SDKSTUB_SRC,
+  //     dataDomainScript: process.env.OT_DATA_DOMAIN_SCRIPT,
+  //     skip: !isProduction
+  //   }
+  // }
 ];
 
 if (process.env.CONTEXT === 'production') {
@@ -262,9 +262,9 @@ if (isSingleDocset) {
 }
 
 module.exports = {
-  pathPrefix: '/docs',
+  pathPrefix: '/',
   siteMetadata: {
-    siteUrl: 'https://www.apollographql.com'
+    siteUrl: 'https://apollographql.qubitpi.org'
   },
   plugins
 };
