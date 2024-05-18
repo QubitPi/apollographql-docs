@@ -1,4 +1,4 @@
-# Apollo Docs
+# Apollo Docs [![Netlify Status](https://api.netlify.com/api/v1/badges/99f76ae9-1ffc-4d17-bd4c-20d0b0bade9f/deploy-status)](https://app.netlify.com/sites/apollographql/deploys)
 
 This repo contains the code responsible for building the Apollo Docs site. It also houses the content for the Apollo Basics and GraphOS **docsets**.
 
